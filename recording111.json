@@ -1,0 +1,1298 @@
+[
+  {
+    "time": 0.2458341121673584,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 0.2458341121673584,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 0.7449495792388916,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 0.7449495792388916,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 1.244825839996338,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 1.244825839996338,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 1.7376353740692139,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 1.7376353740692139,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 2.2538845539093018,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 2.2538845539093018,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 2.7613723278045654,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 2.7613723278045654,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 3.2532460689544678,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 3.2532460689544678,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 3.7527289390563965,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 3.7527289390563965,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 4.255363464355469,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 4.255363464355469,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 4.761008977890015,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 4.761008977890015,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 5.25904655456543,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 5.25904655456543,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 5.758756160736084,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 5.758756160736084,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 6.254696846008301,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 6.254696846008301,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 6.759464740753174,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 6.759464740753174,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 7.257168531417847,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 7.257168531417847,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 7.756175756454468,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 7.756175756454468,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 8.27086615562439,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 8.27086615562439,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 8.791511297225952,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 8.791511297225952,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 9.289628267288208,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 9.289628267288208,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 9.78489065170288,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 9.78489065170288,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 10.286579370498657,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 10.286579370498657,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 10.792628288269043,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 10.792628288269043,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 11.285083055496216,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 11.285083055496216,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 11.788536071777344,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 11.788536071777344,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 12.286547899246216,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 12.286547899246216,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 12.792495250701904,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 12.792495250701904,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 13.286962032318115,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 13.286962032318115,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 13.791608810424805,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 13.791608810424805,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 14.284517049789429,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 14.284517049789429,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 14.803978681564331,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 14.803978681564331,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 15.289297342300415,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 15.289297342300415,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 15.785268306732178,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 15.785268306732178,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 16.28345012664795,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 16.28345012664795,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 16.793468952178955,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 16.793468952178955,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 17.284887552261353,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 17.284887552261353,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 17.78393793106079,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 17.78393793106079,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 18.28676462173462,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 18.28676462173462,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 18.782811403274536,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 18.782811403274536,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 19.290088176727295,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 19.290088176727295,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 19.785484790802002,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 19.785484790802002,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 20.28735899925232,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 20.28735899925232,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 20.782795667648315,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 20.782795667648315,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 21.28900408744812,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 21.28900408744812,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 21.788322925567627,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 21.788322925567627,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 22.29729437828064,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 22.29729437828064,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 22.79092025756836,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 22.79092025756836,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 23.28627848625183,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 23.28627848625183,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 23.801186323165894,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 23.801186323165894,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 24.285125970840454,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 24.285125970840454,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 24.79601001739502,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 24.79601001739502,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 25.31616234779358,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 25.31616234779358,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 25.817652225494385,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 25.817652225494385,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 26.31632709503174,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 26.31632709503174,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 26.837456464767456,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 26.837456464767456,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Bradycardia"
+  }
+]

@@ -1,0 +1,914 @@
+[
+  {
+    "time": 0.44179558753967285,
+    "values": {
+      "HR": "60",
+      "RR": "12",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": null
+  },
+  {
+    "time": 0.44179558753967285,
+    "values": {
+      "HR": "60",
+      "RR": "12",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 0.9401733875274658,
+    "values": {
+      "HR": "60",
+      "RR": "12",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": null
+  },
+  {
+    "time": 0.9401733875274658,
+    "values": {
+      "HR": "60",
+      "RR": "12",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 1.4493627548217773,
+    "values": {
+      "HR": "60",
+      "RR": "12",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": null
+  },
+  {
+    "time": 1.4493627548217773,
+    "values": {
+      "HR": "60",
+      "RR": "12",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 1.948859453201294,
+    "values": {
+      "HR": "60",
+      "RR": "12",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": null
+  },
+  {
+    "time": 1.948859453201294,
+    "values": {
+      "HR": "60",
+      "RR": "12",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 2.4509496688842773,
+    "values": {
+      "HR": "60",
+      "RR": "12",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": null
+  },
+  {
+    "time": 2.4509496688842773,
+    "values": {
+      "HR": "60",
+      "RR": "12",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 2.9497153759002686,
+    "values": {
+      "HR": "60",
+      "RR": "12",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": null
+  },
+  {
+    "time": 2.9497153759002686,
+    "values": {
+      "HR": "60",
+      "RR": "12",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 3.4479448795318604,
+    "values": {
+      "HR": "60",
+      "RR": "12",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": null
+  },
+  {
+    "time": 3.4479448795318604,
+    "values": {
+      "HR": "60",
+      "RR": "12",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 3.951162099838257,
+    "values": {
+      "HR": "60",
+      "RR": "12",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": null
+  },
+  {
+    "time": 3.951162099838257,
+    "values": {
+      "HR": "60",
+      "RR": "12",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 4.45190167427063,
+    "values": {
+      "HR": "60",
+      "RR": "12",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": null
+  },
+  {
+    "time": 4.45190167427063,
+    "values": {
+      "HR": "60",
+      "RR": "12",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 4.948240280151367,
+    "values": {
+      "HR": "60",
+      "RR": "12",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": null
+  },
+  {
+    "time": 4.948240280151367,
+    "values": {
+      "HR": "60",
+      "RR": "12",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 5.452812194824219,
+    "values": {
+      "HR": "60",
+      "RR": "12",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": null
+  },
+  {
+    "time": 5.452812194824219,
+    "values": {
+      "HR": "60",
+      "RR": "12",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 5.948042869567871,
+    "values": {
+      "HR": "60",
+      "RR": "12",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": null
+  },
+  {
+    "time": 5.948042869567871,
+    "values": {
+      "HR": "60",
+      "RR": "12",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 6.452030181884766,
+    "values": {
+      "HR": "62",
+      "RR": "12",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": null
+  },
+  {
+    "time": 6.452030181884766,
+    "values": {
+      "HR": "62",
+      "RR": "12",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 6.9490954875946045,
+    "values": {
+      "HR": "67",
+      "RR": "12",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": null
+  },
+  {
+    "time": 6.9490954875946045,
+    "values": {
+      "HR": "67",
+      "RR": "12",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 7.4392781257629395,
+    "values": {
+      "HR": "69",
+      "RR": "12",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": null
+  },
+  {
+    "time": 7.4392781257629395,
+    "values": {
+      "HR": "69",
+      "RR": "12",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 7.939464092254639,
+    "values": {
+      "HR": "73",
+      "RR": "12",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": null
+  },
+  {
+    "time": 7.939464092254639,
+    "values": {
+      "HR": "73",
+      "RR": "12",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 8.449673652648926,
+    "values": {
+      "HR": "77",
+      "RR": "12",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": null
+  },
+  {
+    "time": 8.449673652648926,
+    "values": {
+      "HR": "77",
+      "RR": "12",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 8.949336290359497,
+    "values": {
+      "HR": "78",
+      "RR": "12",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": null
+  },
+  {
+    "time": 8.949336290359497,
+    "values": {
+      "HR": "78",
+      "RR": "12",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 9.45109248161316,
+    "values": {
+      "HR": "78",
+      "RR": "12",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": null
+  },
+  {
+    "time": 9.45109248161316,
+    "values": {
+      "HR": "78",
+      "RR": "12",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 9.942975997924805,
+    "values": {
+      "HR": "78",
+      "RR": "12",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": null
+  },
+  {
+    "time": 9.942975997924805,
+    "values": {
+      "HR": "78",
+      "RR": "12",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 10.444148540496826,
+    "values": {
+      "HR": "79",
+      "RR": "12",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": null
+  },
+  {
+    "time": 10.444148540496826,
+    "values": {
+      "HR": "79",
+      "RR": "12",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 10.942233085632324,
+    "values": {
+      "HR": "78",
+      "RR": "12",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": null
+  },
+  {
+    "time": 10.942233085632324,
+    "values": {
+      "HR": "78",
+      "RR": "12",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 11.446999788284302,
+    "values": {
+      "HR": "78",
+      "RR": "13",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": null
+  },
+  {
+    "time": 11.446999788284302,
+    "values": {
+      "HR": "78",
+      "RR": "13",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 11.945505857467651,
+    "values": {
+      "HR": "78",
+      "RR": "14",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": null
+  },
+  {
+    "time": 11.945505857467651,
+    "values": {
+      "HR": "78",
+      "RR": "14",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 12.440666913986206,
+    "values": {
+      "HR": "78",
+      "RR": "14",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": null
+  },
+  {
+    "time": 12.440666913986206,
+    "values": {
+      "HR": "78",
+      "RR": "14",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 12.940107345581055,
+    "values": {
+      "HR": "78",
+      "RR": "14",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": null
+  },
+  {
+    "time": 12.940107345581055,
+    "values": {
+      "HR": "78",
+      "RR": "14",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 13.446705102920532,
+    "values": {
+      "HR": "78",
+      "RR": "14",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": null
+  },
+  {
+    "time": 13.446705102920532,
+    "values": {
+      "HR": "78",
+      "RR": "14",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 13.947190046310425,
+    "values": {
+      "HR": "78",
+      "RR": "14",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": null
+  },
+  {
+    "time": 13.947190046310425,
+    "values": {
+      "HR": "78",
+      "RR": "14",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 14.442098617553711,
+    "values": {
+      "HR": "78",
+      "RR": "14",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": null
+  },
+  {
+    "time": 14.442098617553711,
+    "values": {
+      "HR": "78",
+      "RR": "14",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 14.96552062034607,
+    "values": {
+      "HR": "78",
+      "RR": "14",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": null
+  },
+  {
+    "time": 14.96552062034607,
+    "values": {
+      "HR": "78",
+      "RR": "14",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 15.462860822677612,
+    "values": {
+      "HR": "78",
+      "RR": "14",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": null
+  },
+  {
+    "time": 15.462860822677612,
+    "values": {
+      "HR": "78",
+      "RR": "14",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 15.95931887626648,
+    "values": {
+      "HR": "78",
+      "RR": "14",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": null
+  },
+  {
+    "time": 15.95931887626648,
+    "values": {
+      "HR": "78",
+      "RR": "14",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 16.657809495925903,
+    "values": {
+      "HR": "78",
+      "RR": "14",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": null
+  },
+  {
+    "time": 16.657809495925903,
+    "values": {
+      "HR": "78",
+      "RR": "14",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 16.965210914611816,
+    "values": {
+      "HR": "78",
+      "RR": "14",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": null
+  },
+  {
+    "time": 16.965210914611816,
+    "values": {
+      "HR": "78",
+      "RR": "14",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 17.47144913673401,
+    "values": {
+      "HR": "78",
+      "RR": "14",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": null
+  },
+  {
+    "time": 17.47144913673401,
+    "values": {
+      "HR": "78",
+      "RR": "14",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 17.97848081588745,
+    "values": {
+      "HR": "78",
+      "RR": "14",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": null
+  },
+  {
+    "time": 17.97848081588745,
+    "values": {
+      "HR": "78",
+      "RR": "14",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 18.490127325057983,
+    "values": {
+      "HR": "78",
+      "RR": "14",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": null
+  },
+  {
+    "time": 18.490127325057983,
+    "values": {
+      "HR": "78",
+      "RR": "14",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": "Bradycardia"
+  },
+  {
+    "time": 18.97513437271118,
+    "values": {
+      "HR": "78",
+      "RR": "14",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": null
+  },
+  {
+    "time": 18.97513437271118,
+    "values": {
+      "HR": "78",
+      "RR": "14",
+      "SpO2": "95",
+      "BP:SYS": "110",
+      "BP:DYS": "70",
+      "TEMP": "36"
+    },
+    "scenario": "Bradycardia"
+  }
+]
