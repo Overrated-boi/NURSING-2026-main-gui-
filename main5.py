@@ -1,5 +1,6 @@
 import sys,subprocess
 import threading
+import os
 from PyQt6.QtWidgets import (QApplication, QMainWindow, QVBoxLayout,QHBoxLayout,QWidget,
                             QFrame, QSizePolicy,QLabel,QGridLayout,QSpacerItem,QGraphicsView, QGraphicsScene, QGraphicsProxyWidget)
 from PyQt6.QtCore import Qt,QRect,QTimer
@@ -12,7 +13,7 @@ from PyQt6.QtCore import Qt
 from PyQt6.QtWidgets import (
     QApplication, QGraphicsView, QGraphicsScene, QGraphicsProxyWidget, QMessageBox
 )
-from PyQt6.QtGui import QGuiApplication
+from PyQt6.QtGui import QGuiApplication     
 from PyQt6.QtWidgets import QFileDialog 
 from PyQt6.QtCore import QObject, pyqtSignal 
 # from waveforms import waveform_scenarios 
@@ -34,6 +35,17 @@ from PyQt6.QtMultimedia import QMediaPlayer, QAudioOutput
 from PyQt6.QtCore import QUrl
 
 import hardware
+
+def resource_path(relative_path):
+    """ Get absolute path to resource, works for dev and for PyInstaller """
+    try:
+        # PyInstaller creates a temp folder and stores path in _MEIPASS
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
+
 # How many beats you want visible at once
 
 #UPDATE WAVEFORMS : 10 and 2
@@ -105,6 +117,7 @@ class ScenarioManager(QObject):
     scenarioChanged = pyqtSignal(int)
     ecgScenarioChanged = pyqtSignal(str, int)
     valuesUpdated = pyqtSignal(dict)
+    playRecording = pyqtSignal(str)
 
     def __init__(self):
         super().__init__()
@@ -112,6 +125,8 @@ class ScenarioManager(QObject):
         self.prev_values = prev_values
 
     def set_scenario(self, index):
+        if self.current_scenario == index:
+            return
         self.current_scenario = index
         self.scenarioChanged.emit(index)
 
@@ -168,8 +183,11 @@ class MultiGraphMonitor(QMainWindow):
 
         self._playback_timers = []
         self._play_start_time = 0
+        self._is_playing_recording = False
+        self._last_playback_scenario = None
 
         self.manager = scenario_manager
+        self.cropped = cropped
         if self.manager:
             self.manager.scenarioChanged.connect(self.change_scenario)
         self.container = QWidget(self)
@@ -178,7 +196,7 @@ class MultiGraphMonitor(QMainWindow):
 
         self.main_layout = QVBoxLayout()  
         self.main_layout.setContentsMargins(0, 0, 0, 0) 
-        self.main_layout.setSpacing(0)  
+        self.main_layout.setSpacing(0)
         self.container.setLayout(self.main_layout)
 
         self.top_layout = QHBoxLayout()
@@ -221,26 +239,30 @@ class MultiGraphMonitor(QMainWindow):
 
         self.hr_label.setStyleSheet("""
             color: lime;
-            font-family: 'Arial Black', 'DIN Alternate Bold', sans-serif;
+            font-family: 'Arial', 'DIN Alternate', sans-serif;
             font-size: 100px;
+            font-weight: 600;
             border: none;
         """)
         self.rr_label.setStyleSheet("""
             color: yellow;
-            font-family: 'Arial Black', 'Roboto Bold', sans-serif;
+            font-family: 'Arial', 'Roboto', sans-serif;
             font-size: 75px;
+            font-weight: 600;
             border: none;
         """)
         self.spo2_label.setStyleSheet("""
             color: deepskyblue;
-            font-family: 'Arial Black', 'Roboto Bold', sans-serif;
+            font-family: 'Arial', 'Roboto', sans-serif;
             font-size: 60px;
+            font-weight: 600;
             border: none;
         """)
         self.bp_label.setStyleSheet("""
             color: red;
-            font-family: 'Arial Black', 'Roboto Bold', sans-serif;
+            font-family: 'Arial', 'Roboto', sans-serif;
             font-size: 48px;
+            font-weight: 600;
             border: none;
         """)
 
@@ -263,32 +285,36 @@ class MultiGraphMonitor(QMainWindow):
         self.hr_range.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.hr_range.setStyleSheet("""
             color: lime;
-            font-family: 'Arial Black', 'DIN Alternate Bold', sans-serif;
-            font-size: 30px;  /* Same font size as your hr_label */
+            font-family: 'Arial', 'DIN Alternate', sans-serif;
+            font-size: 30px;
+            font-weight: 600;
             border: none;
         """)
 
         self.rr_range.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.rr_range.setStyleSheet("""
             color: yellow;
-            font-family: 'Arial Black', 'Roboto Bold', sans-serif;
-            font-size: 28px;  /* Same font size as your rr_label */
+            font-family: 'Arial', 'Roboto', sans-serif;
+            font-size: 28px;
+            font-weight: 600;
             border: none;
         """)
 
         self.spo2_range.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.spo2_range.setStyleSheet("""
             color: deepskyblue;
-            font-family: 'Arial Black', 'Roboto Bold', sans-serif;
-            font-size: 22px;  /* Same font size as your spo2_label */
+            font-family: 'Arial', 'Roboto', sans-serif;
+            font-size: 22px;
+            font-weight: 600;
             border: none;
         """)
 
         self.bp_range.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.bp_range.setStyleSheet("""
             color: red;
-            font-family: 'Arial Black', 'Roboto Bold', sans-serif;
-            font-size: 20px;  /* Same font size as your bp_label */
+            font-family: 'Arial', 'Roboto', sans-serif;
+            font-size: 20px;
+            font-weight: 600;
             border: none;
         """)
 
@@ -371,16 +397,14 @@ class MultiGraphMonitor(QMainWindow):
         self.temp_label = QLabel("--")
         self.nabp_label = QLabel("120/80")
         self.cvp_label = QLabel("8 mmHg")
-        self.rr_bottom_label = QLabel("16")
         self.pap_label = QLabel("25/10")
 
         self.temp_label.setFixedSize(438, 151)
         self.nabp_label.setFixedSize(390, 151)
         self.cvp_label.setFixedSize(400, 151)
-        self.rr_bottom_label.setFixedSize(124, 151)
         self.pap_label.setFixedSize(180, 151)
 
-        for label in [ self.nabp_label, self.cvp_label, self.rr_bottom_label, self.pap_label,self.temp_label]:
+        for label in [ self.nabp_label, self.cvp_label, self.pap_label, self.temp_label]:
             label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.temp_label.setStyleSheet("""
                 color: cyan;
@@ -409,21 +433,14 @@ class MultiGraphMonitor(QMainWindow):
             font-size: 50px;
             border: none;
         """)
-        self.rr_bottom_label.setStyleSheet("""
-            color: yellow;
-            font-family: 'Roboto Medium', 'Arial', 'Verdana', sans-serif;
-            font-size: 49px;
-            border: none;
-        """)
         
-
         spacer = QSpacerItem(50, 10, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
         self.bottom_layout.addItem(spacer)  
 
         self.bottom_layout.addWidget(self.temp_label)
         self.bottom_layout.addWidget(self.nabp_label)
         self.bottom_layout.addWidget(self.cvp_label)
-        self.bottom_layout.addWidget(self.rr_bottom_label)
+        # self.bottom_layout.addWidget(self.rr_bottom_label)  # RR bottom widget removed as requested
         self.bottom_layout.addWidget(self.pap_label)
 
         self.bottom_container.setLayout(self.bottom_layout)
@@ -516,19 +533,16 @@ class MultiGraphMonitor(QMainWindow):
 
         self.temp_range.setLayout(temp_layout)
 
-
         # --- The rest of the footer labels as usual ---
         self.nabp_range = QLabel("--")
         self.cvp_range = QLabel("--")
-        self.rr_bottom_range = QLabel("--")
         self.pap_range = QLabel("--")
 
         self.nabp_range.setFixedSize(390, 70)
         self.cvp_range.setFixedSize(400, 70)
-        self.rr_bottom_range.setFixedSize(124, 70)
         self.pap_range.setFixedSize(180, 70)
 
-        for label in [self.nabp_range, self.cvp_range, self.rr_bottom_range, self.pap_range]:
+        for label in [self.nabp_range, self.cvp_range, self.pap_range]:
             label.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
         self.nabp_range.setStyleSheet("""
@@ -540,13 +554,6 @@ class MultiGraphMonitor(QMainWindow):
         """)
         self.cvp_range.setStyleSheet("""
             color: lightblue;
-            font-family: 'Roboto Medium', 'Arial', 'Verdana', sans-serif;
-            font-size: 26px;
-            border: none;
-            background-color: black;
-        """)
-        self.rr_bottom_range.setStyleSheet("""
-            color: yellow;
             font-family: 'Roboto Medium', 'Arial', 'Verdana', sans-serif;
             font-size: 26px;
             border: none;
@@ -564,7 +571,6 @@ class MultiGraphMonitor(QMainWindow):
         self.footer_layout.addWidget(self.temp_range)
         self.footer_layout.addWidget(self.nabp_range)
         self.footer_layout.addWidget(self.cvp_range)
-        self.footer_layout.addWidget(self.rr_bottom_range)
         self.footer_layout.addWidget(self.pap_range)
 
         if not cropped:
@@ -573,13 +579,19 @@ class MultiGraphMonitor(QMainWindow):
             self.main_layout.addWidget(self.footer_box)
             #self.footer_box.show_message("Simulation initialized successfully.")
                         
-        self.thread = threading.Thread(target=read_serial, daemon=True)
-        self.thread.start()
+        # Serial reader should be started once globally via hardware.start_reader()
+        # (Avoid starting a reader per window instance which causes concurrent reads.)
 
         if not cropped:  # 🔴 only staff GUI updates hardware values
             self.timer = QTimer(self)
             self.timer.timeout.connect(self.update_display)
             self.timer.start(500)
+        else:
+            # For cropped (dual-screen) window: force canvas redraws periodically
+            # to ensure graph updates are visible even if FuncAnimation loop is slow
+            self.dual_screen_refresh = QTimer(self)
+            self.dual_screen_refresh.timeout.connect(self.force_canvas_refresh)
+            self.dual_screen_refresh.start(50)  # ~20 Hz refresh
 
         self.graph_colors = {
             "ECG1": "lime",
@@ -593,8 +605,13 @@ class MultiGraphMonitor(QMainWindow):
         self.graphs = []
         self.index = 3
         self.update_waveforms()  
-                
-        self.ani = FuncAnimation(self.graphs[0][0], self.update_graphs, interval=50, blit=False, cache_frame_data=False)
+        
+        # Start animation loop for this instance
+        # This ensures both staff and dual-screen windows animate their graphs
+        if len(self.graphs) > 0:
+            self.ani = FuncAnimation(self.graphs[0][0], self.update_graphs, interval=50, blit=False, cache_frame_data=False)
+        else:
+            self.ani = None
 
     def switch_scenario_global(self, index):
         """Switch scenario in both staff and mirror windows."""
@@ -678,17 +695,42 @@ class MultiGraphMonitor(QMainWindow):
         else:
             hr = DEFAULT_HR
 
+        # 🔊 Only the primary (non-cropped) window should play/pause audio to avoid duplicates
+        if not getattr(self, "cropped", False):
+            if scenario_name == "Normal":
+                self.player.setSource(QUrl.fromLocalFile(resource_path("audio.mp3")))
+                self.player.play()
+                print("Audio for NORMAL playing (app control)...")
+            elif scenario_name == "Bradycardia":
+                self.player.setSource(QUrl.fromLocalFile(resource_path("audio1.mp3")))
+                self.player.play()
+                print("Audio for BRADYCARDIA playing (app control)...")
+            elif scenario_name == "Tachycardia":
+                self.player.pause()
+                print("Audio paused (TACHYCARDIA) (app control).")
+        else:
+            # Mirror/cropped window: skip audio to avoid duplicate sound
+            pass
+
         self.request_scenario_switch(scenario_name, hr=hr, delay_ms=150)
         print(f"Scenario changed to: {scenario_name}")
 
     def update_display(self):
         """Updates UI labels with new values."""
+        if self._is_playing_recording:
+            return
+
         self.hr_label.setText(f"{prev_values['HR']}")
         self.rr_label.setText(f"{prev_values['RR']}")
         self.spo2_label.setText(f"{prev_values['SpO2']} %")
         self.bp_label.setText(f"{prev_values['BP:SYS']}/{prev_values['BP:DYS']}")
         self.temp_label.setText(f"{prev_values['TEMP']}°C")
-    
+
+        # Update the large bottom detail labels too
+        self.nabp_label.setText(f"{prev_values.get('NABP:SYS', prev_values.get('BP:SYS', '--'))}/{prev_values.get('NABP:DYS', prev_values.get('BP:DYS', '--'))}")
+        self.cvp_label.setText(f"{prev_values.get('CVP', '--')} mmHg")
+        self.pap_label.setText(f"{prev_values.get('PAP:SYS', '--')}/{prev_values.get('PAP:DYS', '--')}")
+
         try:
             temp = float(prev_values['TEMP'])
             self.temp_value_label.setText(f"Temp: {temp:.1f}°C")
@@ -696,29 +738,36 @@ class MultiGraphMonitor(QMainWindow):
             self.temp_value_label.setText("Temp: 37-39°C")
 
         try:
-            sys = int(prev_values['BP:SYS'])
-            dys = int(prev_values['BP:DYS'])
+            sys = int(prev_values.get('NABP:SYS', prev_values.get('BP:SYS', '--')))
+            dys = int(prev_values.get('NABP:DYS', prev_values.get('BP:DYS', '--')))
             self.nabp_range.setText(f"NABP: {sys}/{dys}")
         except Exception:
             self.nabp_range.setText("BP: 110/80")
 
         try:
-            cvp = int(prev_values['HR']) % 15
-            self.cvp_range.setText(f"CVP: {cvp} mmHg")
+            cvp = prev_values.get('CVP')
+            cvp_val = int(cvp) if cvp is not None and str(cvp).strip() != "--" else None
+            if cvp_val is not None:
+                self.cvp_range.setText(f"CVP: {cvp_val} mmHg")
+            else:
+                raise ValueError
         except Exception:
             self.cvp_range.setText("CVP: 6 mmHg")
 
         try:
             rr = int(prev_values['RR'])
-            self.rr_bottom_range.setText(f"RR: {rr}")
+            # self.rr_bottom_range.setText(f"RR: {rr}")  # RR controlled from top panel; bottom RR display is intentionally disabled
         except Exception:
-            self.rr_bottom_range.setText("RR: 10-40")
+            # self.rr_bottom_range.setText("RR: 10-40")
+            pass
 
         try:
-            spo2 = int(prev_values['SpO2'])
-            pap_sys = 25 + spo2 % 10
-            pap_dys = 10 + spo2 % 5
-            self.pap_range.setText(f"PAP: {pap_sys}/{pap_dys}")
+            pap_sys = prev_values.get('PAP:SYS')
+            pap_dys = prev_values.get('PAP:DYS')
+            if pap_sys is not None and pap_dys is not None and str(pap_sys).strip() != "--" and str(pap_dys).strip() != "--":
+                self.pap_range.setText(f"PAP: {int(float(pap_sys))}/{int(float(pap_dys))}")
+            else:
+                raise ValueError
         except Exception:
             self.pap_range.setText("PAP: 18mmHg")
         self.recorder.record_step(prev_values)
@@ -733,6 +782,11 @@ class MultiGraphMonitor(QMainWindow):
         self.bp_label.setText(f"{values['BP:SYS']}/{values['BP:DYS']}")
         self.temp_label.setText(f"{values['TEMP']}°C")
 
+        # Update the large bottom detail labels too
+        self.nabp_label.setText(f"{values.get('NABP:SYS', values.get('BP:SYS', '--'))}/{values.get('NABP:DYS', values.get('BP:DYS', '--'))}")
+        self.cvp_label.setText(f"{values.get('CVP', '--')} mmHg")
+        self.pap_label.setText(f"{values.get('PAP:SYS', '--')}/{values.get('PAP:DYS', '--')}")
+
         # Footer values (mirroring update_display logic)
         try:
             temp = float(values['TEMP'])
@@ -741,40 +795,42 @@ class MultiGraphMonitor(QMainWindow):
             self.temp_value_label.setText("Temp: 37-39°C")
 
         try:
-            sys = int(values['BP:SYS'])
-            dys = int(values['BP:DYS'])
+            sys = int(values.get('NABP:SYS', values.get('BP:SYS', '--')))
+            dys = int(values.get('NABP:DYS', values.get('BP:DYS', '--')))
             self.nabp_range.setText(f"NABP: {sys}/{dys}")
         except Exception:
             self.nabp_range.setText("BP: 110/80")
 
         try:
-            cvp = int(values['HR']) % 15
-            self.cvp_range.setText(f"CVP: {cvp} mmHg")
+            cvp = values.get('CVP')
+            cvp_val = int(cvp) if cvp is not None and str(cvp).strip() != "--" else None
+            if cvp_val is not None:
+                self.cvp_range.setText(f"CVP: {cvp_val} mmHg")
+            else:
+                raise ValueError
         except Exception:
             self.cvp_range.setText("CVP: 6 mmHg")
 
         try:
             rr = int(values['RR'])
-            self.rr_bottom_range.setText(f"RR: {rr}")
+            # self.rr_bottom_range.setText(f"RR: {rr}")  # bottom RR label intentionally disabled for direct control mapping
         except Exception:
-            self.rr_bottom_range.setText("RR: 10-40")
+            # self.rr_bottom_range.setText("RR: 10-40")
+            pass
 
         try:
-            spo2 = int(values['SpO2'])
-            pap_sys = 25 + spo2 % 10
-            pap_dys = 10 + spo2 % 5
-            self.pap_range.setText(f"PAP: {pap_sys}/{pap_dys}")
+            pap_sys = values.get('PAP:SYS')
+            pap_dys = values.get('PAP:DYS')
+            if pap_sys is not None and pap_dys is not None and str(pap_sys).strip() != "--" and str(pap_dys).strip() != "--":
+                self.pap_range.setText(f"PAP: {int(float(pap_sys))}/{int(float(pap_dys))}")
+            else:
+                raise ValueError
         except Exception:
             self.pap_range.setText("PAP: 18mmHg")
             
             
             
-    import numpy as np
-
-
-
-
-
+            
     def update_waveforms(self):
         """Updates the displayed waveforms based on the current scenario with smooth blending."""
         # Clear existing waveform UI
@@ -866,6 +922,8 @@ class MultiGraphMonitor(QMainWindow):
         self._playback_data = sorted(data, key=lambda f: f["time"])
         self._current_frame_index = 0
         self._is_playing = True
+        self._is_playing_recording = True
+        self._last_playback_scenario = None
 
         max_time = self._playback_data[-1]["time"]
         self.footer_box.set_max_duration(max_time)
@@ -884,13 +942,20 @@ class MultiGraphMonitor(QMainWindow):
 
         def apply_frame(frame):
             scenario = frame.get("scenario")
-            if scenario and scenario in self.scenarios:
+            if scenario and scenario in self.scenarios and scenario != self._last_playback_scenario:
                 idx = self.scenarios.index(scenario)
                 if self.manager:
                     self.manager.set_scenario(idx)
                 else:
                     self.change_scenario(idx)
+                self._last_playback_scenario = scenario
+
+            # Update staff window values
             self.update_ui_with_data(frame["values"])
+
+            # Broadcast to student window(s) (and any other subscribers)
+            if self.manager:
+                self.manager.valuesUpdated.emit(frame["values"].copy())
 
         def playback_loop():
             if not self._is_playing:
@@ -908,6 +973,7 @@ class MultiGraphMonitor(QMainWindow):
 
         def end_playback():
             self._is_playing = False
+            self._is_playing_recording = False
             self.play_indicator.hide()
             self.footer_box.slider.setVisible(False)
 
@@ -951,12 +1017,12 @@ class MultiGraphMonitor(QMainWindow):
 
         # 🔊 Always handle audio first
         if btn == "ECG1":
-            self.player.setSource(QUrl.fromLocalFile("audio.mp3"))
+            self.player.setSource(QUrl.fromLocalFile(resource_path("audio.mp3")))
             self.player.play()
             print("Audio for NORMAL playing...")
 
         elif btn == "ECG2":
-            self.player.setSource(QUrl.fromLocalFile("audio1.mp3"))
+            self.player.setSource(QUrl.fromLocalFile(resource_path("audio1.mp3")))
             self.player.play()
             print("Audio for BRADYCARDIA playing...")
 
@@ -970,7 +1036,11 @@ class MultiGraphMonitor(QMainWindow):
             if self.current_scenario != idx:
                 self.current_scenario = idx 
                 print(f"Graph switched → {scenario_name}")
-                self.switch_graph(scenario_name)
+                # ✅ Use the manager signal so BOTH staff and student GUIs get updated
+                if self.manager:
+                    self.manager.set_scenario(idx)
+                else:
+                    self.switch_graph(scenario_name)
 
         # Reset for next press
         hardware.button_scenario = None
@@ -1027,7 +1097,7 @@ class MultiGraphMonitor(QMainWindow):
                     self.manager.ecgScenarioChanged.emit(scenario_name, hr)
                     
         if key == Qt.Key.Key_P:  # Only for key "1"
-            self.player.setSource(QUrl.fromLocalFile("audio.mp3"))
+            self.player.setSource(QUrl.fromLocalFile(resource_path("audio.mp3")))
             self.player.play()
             print("Audio playing...")
             print("Audio playing...")
@@ -1074,11 +1144,8 @@ class MultiGraphMonitor(QMainWindow):
                 "JSON Files (*.json)"
             )
             if file_path:
-                self.recording_indicator.hide()
-                self.play_indicator.show()
-                self.play_blink_anim.start()
-                self.play_recording(file_path)
-                self.play_blink_anim.start()
+                if self.manager:
+                    self.manager.playRecording.emit(file_path)
 
         elif key == Qt.Key.Key_C:
             print("Glitch transition before switching to cpr65air.py...")
@@ -1162,6 +1229,11 @@ class MultiGraphMonitor(QMainWindow):
             canvas.draw()
         self.index += 1
 
+    def force_canvas_refresh(self):
+        """Force redraw of all canvases (used for dual-screen window)."""
+        for _, _, canvas, _, _, _ in self.graphs:
+            canvas.draw_idle()
+
 
 class CustomGraphicsView(QGraphicsView):
     def __init__(self, monitor_widget, *args, **kwargs):
@@ -1183,6 +1255,22 @@ def run_dual_monitor_gui():
     screens = QGuiApplication.screens()
     manager = ScenarioManager()
 
+    # Start the hardware serial reader once for the whole application.
+    # This prevents multiple threads from concurrently reading the same serial port
+    # which causes garbled/partial data when multiple windows (dual screens) are used.
+    try:
+        hardware.start_reader()
+    except Exception:
+        pass
+
+    # Start remote control server to accept commands from the phone app.
+    # This is optional; if no phone connects it will simply advertise via UDP.
+    try:
+        from remote_control import start_remote_control
+        start_remote_control(manager)
+    except Exception as e:
+        print("Remote control not started:", e)
+
     if len(screens) < 2:
         reply = QMessageBox.question(
             None,
@@ -1202,6 +1290,7 @@ def run_dual_monitor_gui():
             # ✅ connect signals even in single-screen mode
             manager.scenarioChanged.connect(staff_gui.change_scenario)
             manager.ecgScenarioChanged.connect(staff_gui.update_ecg_only)
+            manager.playRecording.connect(staff_gui.play_recording)
 
             staff_gui.showFullScreen()
             sys.exit(app.exec())
@@ -1224,6 +1313,7 @@ def run_dual_monitor_gui():
     manager.ecgScenarioChanged.connect(student_gui_original.update_ecg_only)
 
     manager.valuesUpdated.connect(student_gui_original.update_ui_with_data)
+    manager.playRecording.connect(staff_gui.play_recording)
     # student graphics proxy
     scene = QGraphicsScene()
     proxy = QGraphicsProxyWidget()

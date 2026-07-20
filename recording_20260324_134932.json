@@ -1,0 +1,146 @@
+[
+  {
+    "time": 0.2912602424621582,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 0.2912602424621582,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 0.7911992073059082,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 0.7911992073059082,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 1.3661446571350098,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 1.3661446571350098,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 1.7999494075775146,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 1.7999494075775146,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 2.290919542312622,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 2.290919542312622,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 2.813375234603882,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": null
+  },
+  {
+    "time": 2.813375234603882,
+    "values": {
+      "HR": "--",
+      "RR": "--",
+      "SpO2": "--",
+      "BP:SYS": "--",
+      "BP:DYS": "--",
+      "TEMP": "--"
+    },
+    "scenario": "Normal"
+  }
+]

@@ -2,7 +2,7 @@
 import serial
 import threading
 
-SERIAL_PORT = "COM6"   # Adjust if different
+SERIAL_PORT = "COM12"   # Adjust if different
 BAUD_RATE = 9600
 
 # Dictionary to hold the latest sensor values
@@ -12,7 +12,12 @@ prev_values = {
     "SpO2": "--",
     "BP:SYS": "--",
     "BP:DYS": "--",
-    "TEMP": "--"
+    "TEMP": "--",
+    "NABP:SYS": "--",
+    "NABP:DYS": "--",
+    "CVP": "--",
+    "PAP:SYS": "--",
+    "PAP:DYS": "--"
 }
 
 # Last button scenario detected ("ECG1", "ECG2", "ECG3")

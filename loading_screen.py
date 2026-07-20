@@ -1,3 +1,5 @@
+import sys
+import os
 from PyQt6.QtCore import Qt, QByteArray
 from PyQt6.QtGui import QFont, QPixmap
 from PyQt6.QtWidgets import (
@@ -7,6 +9,16 @@ from PyQt6.QtWidgets import (
 from PyQt6.QtCore import QPropertyAnimation, QEasingCurve
 from PyQt6.QtMultimedia import QMediaPlayer, QAudioOutput
 from PyQt6.QtCore import QUrl
+
+def resource_path(relative_path):
+    """ Get absolute path to resource, works for dev and for PyInstaller """
+    try:
+        # PyInstaller creates a temp folder and stores path in _MEIPASS
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
 
 
 LOGO_B64 = """
@@ -45,7 +57,7 @@ class LoadingScreen(QWidget):
         self.audio_output = QAudioOutput()
         self.player.setAudioOutput(self.audio_output)
         self.audio_output.setVolume(50)  # 0-100
-        self.player.setSource(QUrl.fromLocalFile("Loading Screen.mp3"))
+        self.player.setSource(QUrl.fromLocalFile(resource_path("Loading Screen.mp3")))
         self.player.play()
 
         # --- existing code ---

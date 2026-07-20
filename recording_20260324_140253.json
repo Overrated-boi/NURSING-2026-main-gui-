@@ -1,0 +1,626 @@
+[
+  {
+    "time": 0.3978002071380615,
+    "values": {
+      "HR": "75",
+      "RR": "16",
+      "SpO2": "93",
+      "BP:SYS": "154",
+      "BP:DYS": "80",
+      "TEMP": "36.5"
+    },
+    "scenario": null
+  },
+  {
+    "time": 0.3978002071380615,
+    "values": {
+      "HR": "75",
+      "RR": "16",
+      "SpO2": "93",
+      "BP:SYS": "154",
+      "BP:DYS": "80",
+      "TEMP": "36.5"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 0.8970444202423096,
+    "values": {
+      "HR": "75",
+      "RR": "16",
+      "SpO2": "93",
+      "BP:SYS": "154",
+      "BP:DYS": "80",
+      "TEMP": "36.5"
+    },
+    "scenario": null
+  },
+  {
+    "time": 0.8970444202423096,
+    "values": {
+      "HR": "75",
+      "RR": "16",
+      "SpO2": "93",
+      "BP:SYS": "154",
+      "BP:DYS": "80",
+      "TEMP": "36.5"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 1.3991270065307617,
+    "values": {
+      "HR": "75",
+      "RR": "16",
+      "SpO2": "93",
+      "BP:SYS": "154",
+      "BP:DYS": "80",
+      "TEMP": "36.5"
+    },
+    "scenario": null
+  },
+  {
+    "time": 1.3991270065307617,
+    "values": {
+      "HR": "75",
+      "RR": "16",
+      "SpO2": "93",
+      "BP:SYS": "154",
+      "BP:DYS": "80",
+      "TEMP": "36.5"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 1.8981993198394775,
+    "values": {
+      "HR": "75",
+      "RR": "16",
+      "SpO2": "93",
+      "BP:SYS": "154",
+      "BP:DYS": "80",
+      "TEMP": "36.5"
+    },
+    "scenario": null
+  },
+  {
+    "time": 1.8981993198394775,
+    "values": {
+      "HR": "75",
+      "RR": "16",
+      "SpO2": "93",
+      "BP:SYS": "154",
+      "BP:DYS": "80",
+      "TEMP": "36.5"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 2.398205041885376,
+    "values": {
+      "HR": "75",
+      "RR": "16",
+      "SpO2": "93",
+      "BP:SYS": "154",
+      "BP:DYS": "80",
+      "TEMP": "36.5"
+    },
+    "scenario": null
+  },
+  {
+    "time": 2.398205041885376,
+    "values": {
+      "HR": "75",
+      "RR": "16",
+      "SpO2": "93",
+      "BP:SYS": "154",
+      "BP:DYS": "80",
+      "TEMP": "36.5"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 2.899254560470581,
+    "values": {
+      "HR": "75",
+      "RR": "16",
+      "SpO2": "93",
+      "BP:SYS": "154",
+      "BP:DYS": "80",
+      "TEMP": "36.5"
+    },
+    "scenario": null
+  },
+  {
+    "time": 2.899254560470581,
+    "values": {
+      "HR": "75",
+      "RR": "16",
+      "SpO2": "93",
+      "BP:SYS": "154",
+      "BP:DYS": "80",
+      "TEMP": "36.5"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 3.4000115394592285,
+    "values": {
+      "HR": "75",
+      "RR": "16",
+      "SpO2": "93",
+      "BP:SYS": "154",
+      "BP:DYS": "80",
+      "TEMP": "36.5"
+    },
+    "scenario": null
+  },
+  {
+    "time": 3.4000115394592285,
+    "values": {
+      "HR": "75",
+      "RR": "16",
+      "SpO2": "93",
+      "BP:SYS": "154",
+      "BP:DYS": "80",
+      "TEMP": "36.5"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 3.8997833728790283,
+    "values": {
+      "HR": "75",
+      "RR": "16",
+      "SpO2": "93",
+      "BP:SYS": "154",
+      "BP:DYS": "80",
+      "TEMP": "36.5"
+    },
+    "scenario": null
+  },
+  {
+    "time": 3.8997833728790283,
+    "values": {
+      "HR": "75",
+      "RR": "16",
+      "SpO2": "93",
+      "BP:SYS": "154",
+      "BP:DYS": "80",
+      "TEMP": "36.5"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 4.398115396499634,
+    "values": {
+      "HR": "63",
+      "RR": "16",
+      "SpO2": "93",
+      "BP:SYS": "154",
+      "BP:DYS": "80",
+      "TEMP": "36.5"
+    },
+    "scenario": null
+  },
+  {
+    "time": 4.398115396499634,
+    "values": {
+      "HR": "63",
+      "RR": "16",
+      "SpO2": "93",
+      "BP:SYS": "154",
+      "BP:DYS": "80",
+      "TEMP": "36.5"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 4.898822546005249,
+    "values": {
+      "HR": "51",
+      "RR": "16",
+      "SpO2": "93",
+      "BP:SYS": "154",
+      "BP:DYS": "80",
+      "TEMP": "36.5"
+    },
+    "scenario": null
+  },
+  {
+    "time": 4.898822546005249,
+    "values": {
+      "HR": "51",
+      "RR": "16",
+      "SpO2": "93",
+      "BP:SYS": "154",
+      "BP:DYS": "80",
+      "TEMP": "36.5"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 5.398853302001953,
+    "values": {
+      "HR": "40",
+      "RR": "16",
+      "SpO2": "93",
+      "BP:SYS": "154",
+      "BP:DYS": "80",
+      "TEMP": "36.5"
+    },
+    "scenario": null
+  },
+  {
+    "time": 5.398853302001953,
+    "values": {
+      "HR": "40",
+      "RR": "16",
+      "SpO2": "93",
+      "BP:SYS": "154",
+      "BP:DYS": "80",
+      "TEMP": "36.5"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 5.899856805801392,
+    "values": {
+      "HR": "40",
+      "RR": "16",
+      "SpO2": "93",
+      "BP:SYS": "154",
+      "BP:DYS": "80",
+      "TEMP": "36.5"
+    },
+    "scenario": null
+  },
+  {
+    "time": 5.899856805801392,
+    "values": {
+      "HR": "40",
+      "RR": "16",
+      "SpO2": "93",
+      "BP:SYS": "154",
+      "BP:DYS": "80",
+      "TEMP": "36.5"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 6.397287607192993,
+    "values": {
+      "HR": "40",
+      "RR": "16",
+      "SpO2": "93",
+      "BP:SYS": "159",
+      "BP:DYS": "80",
+      "TEMP": "36.5"
+    },
+    "scenario": null
+  },
+  {
+    "time": 6.397287607192993,
+    "values": {
+      "HR": "40",
+      "RR": "16",
+      "SpO2": "93",
+      "BP:SYS": "159",
+      "BP:DYS": "80",
+      "TEMP": "36.5"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 6.900068521499634,
+    "values": {
+      "HR": "40",
+      "RR": "16",
+      "SpO2": "93",
+      "BP:SYS": "150",
+      "BP:DYS": "80",
+      "TEMP": "36.5"
+    },
+    "scenario": null
+  },
+  {
+    "time": 6.900068521499634,
+    "values": {
+      "HR": "40",
+      "RR": "16",
+      "SpO2": "93",
+      "BP:SYS": "150",
+      "BP:DYS": "80",
+      "TEMP": "36.5"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 7.398744106292725,
+    "values": {
+      "HR": "40",
+      "RR": "16",
+      "SpO2": "93",
+      "BP:SYS": "162",
+      "BP:DYS": "80",
+      "TEMP": "36.5"
+    },
+    "scenario": null
+  },
+  {
+    "time": 7.398744106292725,
+    "values": {
+      "HR": "40",
+      "RR": "16",
+      "SpO2": "93",
+      "BP:SYS": "162",
+      "BP:DYS": "80",
+      "TEMP": "36.5"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 7.900130987167358,
+    "values": {
+      "HR": "40",
+      "RR": "16",
+      "SpO2": "93",
+      "BP:SYS": "162",
+      "BP:DYS": "80",
+      "TEMP": "36.5"
+    },
+    "scenario": null
+  },
+  {
+    "time": 7.900130987167358,
+    "values": {
+      "HR": "40",
+      "RR": "16",
+      "SpO2": "93",
+      "BP:SYS": "162",
+      "BP:DYS": "80",
+      "TEMP": "36.5"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 8.398652076721191,
+    "values": {
+      "HR": "40",
+      "RR": "16",
+      "SpO2": "93",
+      "BP:SYS": "162",
+      "BP:DYS": "80",
+      "TEMP": "36.5"
+    },
+    "scenario": null
+  },
+  {
+    "time": 8.398652076721191,
+    "values": {
+      "HR": "40",
+      "RR": "16",
+      "SpO2": "93",
+      "BP:SYS": "162",
+      "BP:DYS": "80",
+      "TEMP": "36.5"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 8.899415493011475,
+    "values": {
+      "HR": "40",
+      "RR": "16",
+      "SpO2": "93",
+      "BP:SYS": "162",
+      "BP:DYS": "80",
+      "TEMP": "36.5"
+    },
+    "scenario": null
+  },
+  {
+    "time": 8.899415493011475,
+    "values": {
+      "HR": "40",
+      "RR": "16",
+      "SpO2": "93",
+      "BP:SYS": "162",
+      "BP:DYS": "80",
+      "TEMP": "36.5"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 9.398463487625122,
+    "values": {
+      "HR": "40",
+      "RR": "16",
+      "SpO2": "93",
+      "BP:SYS": "162",
+      "BP:DYS": "80",
+      "TEMP": "36.5"
+    },
+    "scenario": null
+  },
+  {
+    "time": 9.398463487625122,
+    "values": {
+      "HR": "40",
+      "RR": "16",
+      "SpO2": "93",
+      "BP:SYS": "162",
+      "BP:DYS": "80",
+      "TEMP": "36.5"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 9.899060487747192,
+    "values": {
+      "HR": "53",
+      "RR": "16",
+      "SpO2": "93",
+      "BP:SYS": "162",
+      "BP:DYS": "80",
+      "TEMP": "36.5"
+    },
+    "scenario": null
+  },
+  {
+    "time": 9.899060487747192,
+    "values": {
+      "HR": "53",
+      "RR": "16",
+      "SpO2": "93",
+      "BP:SYS": "162",
+      "BP:DYS": "80",
+      "TEMP": "36.5"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 10.397538185119629,
+    "values": {
+      "HR": "63",
+      "RR": "16",
+      "SpO2": "93",
+      "BP:SYS": "162",
+      "BP:DYS": "80",
+      "TEMP": "36.5"
+    },
+    "scenario": null
+  },
+  {
+    "time": 10.397538185119629,
+    "values": {
+      "HR": "63",
+      "RR": "16",
+      "SpO2": "93",
+      "BP:SYS": "162",
+      "BP:DYS": "80",
+      "TEMP": "36.5"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 10.90035080909729,
+    "values": {
+      "HR": "63",
+      "RR": "16",
+      "SpO2": "93",
+      "BP:SYS": "162",
+      "BP:DYS": "80",
+      "TEMP": "36.5"
+    },
+    "scenario": null
+  },
+  {
+    "time": 10.90035080909729,
+    "values": {
+      "HR": "63",
+      "RR": "16",
+      "SpO2": "93",
+      "BP:SYS": "162",
+      "BP:DYS": "80",
+      "TEMP": "36.5"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 11.399316310882568,
+    "values": {
+      "HR": "77",
+      "RR": "16",
+      "SpO2": "93",
+      "BP:SYS": "162",
+      "BP:DYS": "80",
+      "TEMP": "36.5"
+    },
+    "scenario": null
+  },
+  {
+    "time": 11.399316310882568,
+    "values": {
+      "HR": "77",
+      "RR": "16",
+      "SpO2": "93",
+      "BP:SYS": "162",
+      "BP:DYS": "80",
+      "TEMP": "36.5"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 11.899654865264893,
+    "values": {
+      "HR": "77",
+      "RR": "16",
+      "SpO2": "93",
+      "BP:SYS": "162",
+      "BP:DYS": "80",
+      "TEMP": "36.5"
+    },
+    "scenario": null
+  },
+  {
+    "time": 11.899654865264893,
+    "values": {
+      "HR": "77",
+      "RR": "16",
+      "SpO2": "93",
+      "BP:SYS": "162",
+      "BP:DYS": "80",
+      "TEMP": "36.5"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 12.398359060287476,
+    "values": {
+      "HR": "77",
+      "RR": "16",
+      "SpO2": "93",
+      "BP:SYS": "162",
+      "BP:DYS": "80",
+      "TEMP": "36.5"
+    },
+    "scenario": null
+  },
+  {
+    "time": 12.398359060287476,
+    "values": {
+      "HR": "77",
+      "RR": "16",
+      "SpO2": "93",
+      "BP:SYS": "162",
+      "BP:DYS": "80",
+      "TEMP": "36.5"
+    },
+    "scenario": "Normal"
+  },
+  {
+    "time": 12.89872932434082,
+    "values": {
+      "HR": "77",
+      "RR": "16",
+      "SpO2": "93",
+      "BP:SYS": "162",
+      "BP:DYS": "80",
+      "TEMP": "36.5"
+    },
+    "scenario": null
+  },
+  {
+    "time": 12.89872932434082,
+    "values": {
+      "HR": "77",
+      "RR": "16",
+      "SpO2": "93",
+      "BP:SYS": "162",
+      "BP:DYS": "80",
+      "TEMP": "36.5"
+    },
+    "scenario": "Normal"
+  }
+]
